@@ -44,8 +44,8 @@ class AuthController extends Controller
             ],422);
         }
         //Autentincando al usuario
-        $user = auth()->user()->select('id','name','email','username','rol')->first();
-        dd($user);
+        $user = auth()->user();
+        
         return [
             'token' => $user->createToken('token')->plainTextToken,
             'user' => $user
