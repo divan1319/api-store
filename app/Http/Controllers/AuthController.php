@@ -40,7 +40,7 @@ class AuthController extends Controller
         //revisando el password
         if(!auth()->attempt(['username'=>$data['username'],'password'=>$data['password']])){
             return response([
-                'errors' => ['El email o password no coinciden']
+                'errors' => ['El username o password no coinciden']
             ],422);
         }
         //Autentincando al usuario
