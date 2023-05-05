@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PerfilController;
+use App\Http\Controllers\ResidenciaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,6 +23,8 @@ Route::middleware('auth:sanctum')->group(function(){
     });
     Route::post('/logout', [AuthController::class,'logout']);
     Route::apiResource('/perfil',PerfilController::class);
+    Route::get('/departamentos',[ResidenciaController::class,'getDepartamentos']);
+    Route::get('/departamentos/{id}',[ResidenciaController::class,'getMunicipio']);
     
 });
 
