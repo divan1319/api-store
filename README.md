@@ -9,6 +9,8 @@
 ## Instalacion
 
 - Descargar o clonar el repositorio.
-- Instalar las dependencias con el comando
+- Instalar las dependencias con el comando: composer install
+- Configurar .env para la base de datos, luego correr migraciones.
+- Correr proyecto con el comando: php artisan serve o php artisan serve --host=direccion.ip.maquina --port=8000
 ##
 ### Proyecto en fase de desarollo
