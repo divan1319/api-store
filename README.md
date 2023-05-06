@@ -11,4 +11,4 @@
 - Descargar o clonar el repositorio.
 - Instalar las dependencias con el comando
 ##
-###Proyecto en fase de desarollo
+### Proyecto en fase de desarollo
