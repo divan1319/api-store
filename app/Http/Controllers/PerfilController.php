@@ -94,18 +94,8 @@ class PerfilController extends Controller
                 $usuario->fill($request->only(['name', 'email', 'username']));
                 $usuario->save();
                 $datosReturn = ['user' => $usuario];
-            }/*
-            if ($request->name == null || $request->email == null || $request->username == null) {
-                
-            } else {
-                $usuario = User::find($request->id);
-                $usuario->name = $request->name;
-                $usuario->email = $request->email;
-                $usuario->username = $request->username;
-                $usuario->save();
-                //$usuario = DB::table('users')->where('id',$dataUser['id'])->update($dataUser);
-                $datosReturn = ['user' => $usuario];
-            }*/
+            }
+            
         } else if ($parametro === 'security') {
 
             $userPass = User::find($request->id);
